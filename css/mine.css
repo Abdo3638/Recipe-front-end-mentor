@@ -1,0 +1,149 @@
+/* Variables */
+
+:root {
+  --paragraph-color: hsl(30, 10%, 34%);
+}
+
+/* Variables */
+/* General Rules */
+
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit", sans-serif;
+  position: relative;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+
+.container li {
+  color: var(--paragraph-color);
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+.container h2 {
+  color: hsl(14, 45%, 36%);
+  letter-spacing: 0.05rem;
+}
+
+.container p {
+  color: var(--paragraph-color);
+  line-height: 1.6;
+}
+
+/* General Rules */
+.container {
+  max-width: 900px;
+  background-color: white;
+  margin-inline: auto;
+}
+
+.container img {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: 5rem auto 4rem;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  .container img {
+    border-radius: 1rem;
+  }
+}
+
+.container div:not(:first-child) {
+  padding: 1.5rem;
+}
+/* Start Banner */
+.container .banner h1 {
+  color: #302d2c;
+  margin: 0 0 1rem;
+  font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+  .container .banner h1 {
+    font-size: 2rem;
+  }
+}
+
+.container .article {
+  background-color: #fff5fa;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.container .article h3 {
+  color: #7b284f;
+  margin-bottom: 0.5rem;
+}
+
+/* End Banner*/
+/* Start Instructions */
+.instructions {
+  border-top: 1px solid hsl(30, 18%, 87%);
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+/* End Instructions */
+/* Start Nutrition */
+
+.nutrition p {
+  margin-top: 1rem;
+}
+
+.container .nutrition .row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--paragraph-color);
+  padding: 1rem 0 0.5rem;
+  margin-inline: 10rem;
+}
+@media (max-width: 767px) {
+  .container .nutrition .row {
+    padding: 0.5rem 0;
+    margin-inline: 0;
+  }
+}
+.container .nutrition .row:not(:first-child) {
+  border-top: 1px solid hsl(30, 18%, 87%);
+}
+
+/* End Nutrition */
+/* Start Footer */
+@media (min-width: 768px) {
+  footer {
+    position: absolute;
+    left: 50%;
+    bottom: -3.5rem;
+    transform: translateX(-50%);
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    margin: 1rem 0;
+    text-align: center;
+  }
+}
+
+/* End Footer */
